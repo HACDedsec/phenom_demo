@@ -49,7 +49,7 @@ const SectionComponent = () => {
   };
 
   return (
-    <div className=" backgroundStyle">
+    <div className=" backgroundStyle ">
       <div className="firstDiv">
         <div className="text">
           <h2>Select a Year from dropdown</h2>
@@ -73,7 +73,7 @@ const SectionComponent = () => {
           </DropdownButton>
         </div>
       </div>
-      <div>
+      <div className="secondDiv">
         <h1>seconod</h1>
         {value === "2020" ? (
           <Line data={data} />
