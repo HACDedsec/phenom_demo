@@ -1,3 +1,13 @@
+/* * NavBar styles* */
+
+.NavBarAlign {
+  margin-left: 35px;
+}
+.ButtonDesign {
+  border-radius: 20px;
+}
+
+/* *Section Component Styles* */
 .backgroundStyle {
   height: 100vh;
   display: flex;
@@ -12,10 +22,14 @@
   height: 100%;
   width: 100%;
   background: rgb(255, 255, 255);
+  overflow: hidden;
 }
 
-.text {
-  align-items: center;
-
+.align-1 {
+  text-align: center;
+  margin-top: 30%;
   color: white;
+}
+.align-2 {
+  text-align: center;
 }

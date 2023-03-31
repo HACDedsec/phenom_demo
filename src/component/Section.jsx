@@ -25,7 +25,7 @@ const data2 = {
       label: "Second Year Sale",
       backgroundColor: "rgb(255, 99, 132)",
       borderColor: "rgb(255, 99, 132)",
-      data: [0, 10, 5, 26, 20, 30, 45],
+      data: [0, 60, 5, 26, 20, 30, 45],
     },
   ],
 };
@@ -51,10 +51,12 @@ const SectionComponent = () => {
   return (
     <div className=" backgroundStyle ">
       <div className="firstDiv">
-        <div className="text">
+        <div className="align-1">
           <h2>Select a Year from dropdown</h2>
           &nbsp;
           <span>To see the sales overview</span>
+          <br />
+          <span>&nbsp;</span>
           <DropdownButton
             alignRight
             title={(value && value) || "Select"}
@@ -73,17 +75,19 @@ const SectionComponent = () => {
           </DropdownButton>
         </div>
       </div>
-      <div className="secondDiv">
-        <h1>seconod</h1>
-        {value === "2020" ? (
-          <Line data={data} />
-        ) : value === "2021" ? (
-          <Line data={data2} />
-        ) : value === "2023" ? (
-          <Line data={data3} />
-        ) : (
-          ""
-        )}
+      <div className="secondDiv ">
+        <div className="align-2">
+          <h2>CHART {value === "Select" ? "" : value} </h2>
+          {value === "2020" ? (
+            <Line data={data} />
+          ) : value === "2021" ? (
+            <Line data={data2} />
+          ) : value === "2022" ? (
+            <Line data={data3} />
+          ) : (
+            ""
+          )}
+        </div>
       </div>
     </div>
   );
