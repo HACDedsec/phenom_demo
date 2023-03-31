@@ -1,0 +1,18 @@
+.backgroundStyle {
+  height: 100vh;
+  display: flex;
+  /* justify-content: space-between;
+  align-items: center; */
+}
+
+.firstDiv {
+  height: 100%;
+  width: 50%;
+  background: black;
+}
+
+.text {
+  align-items: center;
+
+  color: white;
+}
