@@ -21,8 +21,8 @@ const NavbarComponent = () => {
   return (
     <>
       <Navbar bg="light" expand="lg" className="row">
-        <div className="col-sm-4 NavBarAlign">
-          <Navbar.Brand href="#home">
+        <div className="col-sm-4 col-4 NavBarAlign">
+          <Navbar.Brand href="#home" className="LogoAlign">
             <svg
               width="1em"
               height="1em"
@@ -40,7 +40,7 @@ const NavbarComponent = () => {
             <b>Phenom</b>
           </Navbar.Brand>
         </div>
-        <div className="col-sm-10">
+        <div className="col-sm-9 ms-5 ms-sm- MenuAlign">
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
 
           <Navbar.Collapse className="row" id="basic-navbar-nav">
