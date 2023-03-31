@@ -44,7 +44,6 @@ const data3 = {
 const SectionComponent = () => {
   const [value, setValue] = useState("");
   const handleSelect = (e) => {
-    console.log(e);
     setValue(e);
   };
 
